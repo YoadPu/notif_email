@@ -29,10 +29,11 @@
             position: absolute;
             width: 100%;
             bottom: 0;
-            left: 0;        }
+            left: 0;
+            z-index: 0;
+        }
         .container {
             position: relative;
-            width: 100%;
             max-width: 600px;
             margin: 0 auto;
             background-color: #E8D9CD;
@@ -45,16 +46,20 @@
             justify-content: center; 
             align-items: center;
             position: relative;
+            z-index: 1;
         }
         .jawa {
-            width: 300px;
+            width: 270px;
             height: auto;
             object-fit: contain;
+            margin-bottom: 10px;
         }
         .text {
             text-align: center;
             padding-right: 60px;
             padding-left: 60px;
+            position: relative;
+            z-index: 1;
         }
         .judul {
             font-size: 32px;
@@ -76,11 +81,9 @@
 </head>
 <body>
     <div class="container">
-        <div class="background">
-            <img class="awan_kiri" src="/aseets/awan kiri.png">
-            <img class="awan_kanan" src="/aseets/awan kanan.png">
-            <img class="menara" src="/aseets/menara.png" alt="menara">
-        </div>
+        <img class="awan_kiri" src="/aseets/awan kiri.png">
+        <img class="awan_kanan" src="/aseets/awan kanan.png">
+        <img class="menara" src="/aseets/menara.png" alt="menara">
         <div class="cotent">
             <img class="jawa" src="/aseets/selamat.png" alt="Logo Jawa">
         </div>
